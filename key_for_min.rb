@@ -5,7 +5,14 @@ def key_for_min_value(name_hash)
   if name_hash == {
     return nil
   else
-    name_hash.sort_by { |k, v| v }
+    sorted = name_hash.sort_by { |k, v| v }
   end
-  return name_hash[0][0]
+  return sorted[0][0]
+end
+
+if name_hash == {}
+  return nil
+else
+  sorted = name_hash.sort_by { |k, v| v }
+  return sorted[0][0]
 end
