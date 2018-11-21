@@ -22,6 +22,11 @@ def key_for_min_value(name_hash)
         min_val = num
       end
     end
+
+    name_hash.each do |k, v|
+      if v == min_val
+        return k
+      end
+    end
   end
-  return min_val
 end
