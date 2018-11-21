@@ -9,10 +9,3 @@ def key_for_min_value(name_hash)
   end
   return sorted[0][0]
 end
-
-if name_hash == {}
-  return nil
-else
-  sorted = name_hash.sort_by { |k, v| v }
-  return sorted[0][0]
-end
